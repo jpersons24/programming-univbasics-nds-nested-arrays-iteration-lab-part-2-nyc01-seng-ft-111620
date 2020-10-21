@@ -28,4 +28,5 @@ def find_min_in_nested_arrays(src)
     low_temps << low_temp
     count += 1
   end
+  p low_temps
 end
