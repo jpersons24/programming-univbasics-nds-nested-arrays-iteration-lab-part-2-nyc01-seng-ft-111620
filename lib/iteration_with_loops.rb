@@ -18,15 +18,15 @@ def find_min_in_nested_arrays(src)
 
   while count < src.length do
     inner_count = 0
-    while inner_count < src[count].length do
-      low_temp = src[count].min
+    while inner_count < src[count].length do # loop over inner array and check each element while inner_count is less than length of array
+      low_temp = src[count].min # set low_temp variable equal to the minimum value within the nested array after checking each element
 
-      inner_count += 1
+      inner_count += 1 # increase inner_count until not longer less than length of nested array
     end
-    low_temps << low_temp
+    low_temps << low_temp # shovel low_temp value of each nested array into new array before increasing variable count by 1
     count += 1
   end
-  p low_temps
+  p low_temps # p out new low_temps array 
 end
 
-find_min_in_nested_arrays(daily_temps)
+# find_min_in_nested_arrays(daily_temps)
