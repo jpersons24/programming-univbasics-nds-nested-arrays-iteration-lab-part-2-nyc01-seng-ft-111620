@@ -29,4 +29,4 @@ def find_min_in_nested_arrays(src)
   p low_temps
 end
 
-def find_min_in_nested_arrays(daily_temps)
+find_min_in_nested_arrays(daily_temps)
